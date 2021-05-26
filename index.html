@@ -14,11 +14,11 @@
 </head>
 
 <body>
-	<div style="height:300px;width:300px"id="mapid"></div>
+	<div style="height:80%;width:80%"id="mapid"></div>
 	<p> Hello World</p>
 </body>
 	 <script>
-	 	var mymap = L.map('mapid').setView([121.550, -25.037], 13);
+	 	var mymap = L.map('mapid').setView([-25.037,121.550], 13);
 		var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 		var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 16});
 		mymap.addLayer(osm);
