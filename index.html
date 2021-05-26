@@ -9,7 +9,6 @@
 	 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 	   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 	   crossorigin=""></script>
-	 <>
 
 </head>
 
@@ -18,7 +17,7 @@
 	<p> Hello World</p>
 </body>
 	 <script>
-	 	var mymap = L.map('mapid').setView([121.550,25.037], 13);
+	 	var mymap = L.map('mapid').setView([25.037,121.550], 15);
 		var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 		var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 16});
 		mymap.addLayer(osm);
