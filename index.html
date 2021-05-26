@@ -9,13 +9,21 @@
 	 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 	   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 	   crossorigin=""></script>
-	 <script>
-	 	var mymap = L.map('mapid').setView([121.550, -25.037], 13);
-	 </script>
+
 
 </head>
 
 <body>
 	<div id="mapid"></div>
 	<p> Hello World</p>
-</body>>
+</body>
+	 <script>
+	 	var mymap = L.map('mapid').setView([121.550, -25.037], 13);
+	 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}', {
+		    maxZoom: 18,
+		    id: 'mapbox/streets-v11',
+		    tileSize: 512,
+		    zoomOffset: -1,
+		}).addTo(mymap);
+	 </script>
+</html>
